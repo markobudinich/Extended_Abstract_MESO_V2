@@ -2,6 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lineno}
+\usepackage{newfloat}
+
+\DeclareFloatingEnvironment[name={Supplementary Figure},fileext=lsf,listname={List of Supplementary Figures}]{suppfigure}
 \linenumbers
 
 \title{Insights into biotic and abiotic modulation of the planktonic mesopelagic oceanic community}
@@ -47,35 +50,33 @@ The present study takes advantage of the Tara Oceans expedition large-scale surv
 
 In this study, we analyzed the community of 32 stations that were sampled in epipelagic and mesopelagic waters, including 13 samples characterized by low concentration of oxygen (OMZ). Our data set was composed by NCDLV viruses (from hereafter named as giruses), two dsDNA-viruses families podoviridae and mioviridae (from hereafter named as viruses), 16S rRNA Mitags-prokaryotes and V9 18S rRNA pico-eukaryotes (0.8-5/0.8-3 um).
 
-\textit{As previously reported, we observed the epi/mesopelagic community stratification according to water column depth for dsDNA-viruses, gyruses, prokaryotes, and pico-eukaryotes.}  (Figure \ref{fig:nmds}).
+\textit{As previously reported, we observed the epi/mesopelagic community stratification according to water column depth for dsDNA-viruses, gyruses, prokaryotes, and pico-eukaryotes.}  (Supplementary Figure \ref{fig:nmds}).
 
 
 \textbf{Maybe this paragraph is not useful anymore, all this info is already published}
 
 
-\begin{figure}[ht]
+\begin{suppfigure}[ht]
     \centering
     \includegraphics[scale=0.5]{images/nmds_used_SF_to_print.pdf}
     \caption{Non-metric multidimensional scaling (NMDS) for all samples demonstrating differences between epipelagic and mesopelagic communities in each organism group}
     \label{fig:nmds}
-\end{figure}
+\end{suppfigure}
 
-Our first goal was to understand the differences between epipelagic and mesopelagic beta diversity variation that can be explained by environmental variables currently indicated as important in oceanography, such as temperature, oxygen, salinity, NO3, chlorophyll-a and particle flux (UVP). Firstly, we compared epipelagic and mesopelagic sampling sites by means of their physico-chemical properties, using Euclidian distance. We observed an elevate dissimilarity gradient among sites for both layers. Mesopelagic sampling points were spread in the plot, with the majority of the points placed distant from the group centroid (located in the center of the clouds of points identified for each group), while epipelagic points displayed a large variance due to few points positioned apart from the main cluster. Despite the lower gradient range of the environmental variables in mesopelagic compared to the epipelagic sites, for instance temperature (min-max meso and min-max epi), these results confirm the heterogeneity of environmental conditions composing both sampled layers. This environmental variation can directly reflect on the community composition composition.  (Figure \ref{fig:betadipersion})
+Our first goal was to understand the differences between epipelagic and mesopelagic beta diversity variation that can be explained by environmental variables currently indicated as important in oceanography, such as temperature, oxygen, salinity, NO3, chlorophyll-a and particle flux (UVP). Firstly, we compared epipelagic and mesopelagic sampling sites by means of their physico-chemical properties, using Euclidian distance. We observed an elevate dissimilarity gradient among sites for both layers. Mesopelagic sampling points were spread in the plot, with the majority of the points placed distant from the group centroid (located in the center of the clouds of points identified for each group), while epipelagic points displayed a large variance due to few points positioned apart from the main cluster. Despite the lower gradient range of the environmental variables in mesopelagic compared to the epipelagic sites, for instance temperature (min-max meso and min-max epi), these results confirm the heterogeneity of environmental conditions composing both sampled layers. This environmental variation can directly reflect on the community composition composition.  (Supplementary Figure \ref{fig:betadipersion})
 
-\begin{figure}[ht]
+\begin{suppfigure}[ht]
     \centering
     \includegraphics[scale=0.5]{images/betadisp_diganose_to_print.pdf}
     \caption{Epipelagic and mesopelagic group dispersions based on physical-chemical oceanic properties (Euclidian method). A) First two axes of PCoA. B) Dispersion of distances from Samples to Centroids.}
     \label{fig:betadipersion}
-\end{figure}
+\end{suppfigure}
 
 Variations in the community composition are always linked to four main processes: selection, dispersal, drift, and speciation (\textbf{Vellend 2010}), and two classes of ecological models (niche-based and neutral models) are frequently used to explain the assembly of communities in the most diverse environments (terrestrial and aquatic) (\textbf{Chave, 2004; McGill et al., 2006}). Our work has led us to conclude that both epipelagic and mesopelagic communities are organized according to niche/deterministic ecological models (\textbf{table sup2}), and the great majority of both epipelagic and mesopelagic samples better fitted the lognormal model. This model has two fitted parameters ((7)Wilson 1991), one theory is that species are affected by several environmental and biotic competitive interactions factors ((7)Wilson 1991). 
 
-Applying a canonical correspondence analysis we could observe that the environment can explain a small fraction of the communities’ variance for both layers (\textbf{figure 1 CCA}). The exception was verified to the virus assemblage which about 62\% of epipelagic variation and 70\% of mesopelagic variation can be explained by the environmental factors included in the analysis (\textbf{figure 1 CCA}). But, differently from epipelagic communities, which is mainly governed by temperature and oxygen gradients as previously reported ((2,3,5,6,8) Sunagawa 2015,Gregory 2019, Ibarbalz 2019, Giner 2020, Ghiglione 2012), we could not identify a common environmental predictor structuring all the mesopelagic assemblies, but few different variables appeared as significant for different groups (\textbf{table Sup3 table ANOVA margin pvalue }). 
+Applying a canonical correspondence analysis we could observe that the environment can explain a small fraction of the communities’ variance for both layers (\textbf{figure 1 CCA}). The exception was verified to the virus assemblage which about 62\% of epipelagic variation and 70\% of mesopelagic variation can be explained by the environmental factors included in the analysis (\textbf{Figure \ref{fig:cca_OS}}). But, differently from epipelagic communities, which is mainly governed by temperature and oxygen gradients as previously reported ((2,3,5,6,8) Sunagawa 2015,Gregory 2019, Ibarbalz 2019, Giner 2020, Ghiglione 2012), we could not identify a common environmental predictor structuring all the mesopelagic assemblies, but few different variables appeared as significant for different groups (\textbf{table Sup3 table ANOVA margin pvalue }). 
 
-Specifically, the oxygen in the mesopelagic layer was the main driver to explain the viruses and prokaryotes variation, as previously reported (\textbf{refs OMZ prok papers}). On the other hand, even though we observed in the ordination plots the distinction of OMZ and Oxic stations also for giruses and eukaryotes assemblies (\textbf{figure 1 CCA} ), we could not disentangle the effect of the oxygen from the others variables included in the analyses (\textbf{table sup 3 ANOVA margin pvalue}). Showing that these assemblies are equally affected by all the predictors evaluated, coping a larger environmental gradient that maximizes their niche-space partitioning.
-
-
+Specifically, the oxygen in the mesopelagic layer was the main driver to explain the viruses and prokaryotes variation, as previously reported (\textbf{refs OMZ prok papers}). On the other hand, even though we observed in the ordination plots the distinction of OMZ and Oxic stations also for giruses and eukaryotes assemblies (\textbf{\ref{fig:cca_OS}}), we could not disentangle the effect of the oxygen from the others variables included in the analyses (\textbf{table sup 3 ANOVA margin pvalue}). Showing that these assemblies are equally affected by all the predictors evaluated, coping a larger environmental gradient that maximizes their niche-space partitioning.
 
 \begin{figure}[ht]
     \centering
@@ -90,16 +91,25 @@ Probably the lower spectra of the physicochemical variables in mesopelagic layer
 
 Another goal that we addressed here was to resolve planktonic community signatures of Oxic-mesopelagic and OMZs regions. For this, we classified OTU’s based on their abundance into three ecoregions: epipelagic, oxic-mesopelagic and OMZ. The taxa that were equally abundant in all the regions were classified as ubiquitous. Strong evidences for ecoregions taxonomic signatures were achieved by applying a powerful methodology based on statistics significance of relative abundances OTUs (Fig \ref{fig:sim_biome}).
 
-\begin{figure}[ht]
+\begin{suppfigure}[ht]
     \centering
     \includegraphics[scale=0.8]{images/simple_biome_projection_to_print.pdf}
     \caption{Biome Assignation}
     \label{fig:sim_biome}
-\end{figure}
+\end{suppfigure}
 
 The great majority of viruses and giruses taxa occurs either in all regions (ubiquitous) or in the mesopelagic layer (\textbf{Fig sup 4}). This strongly suggests that the depth stratification observed for these assemblies might be due to the selection promoted by the mesopelagic environment. Two hypothesis arise here, i) the environment act as a strong driver selecting viruses in mesopelagic layers independently of their host presence, and ii) the virus host range in mesopelagic is narrower than in epipelagic. Firstly, if we consider the higher proportion of the viruses’ variation explained by the environmental predictors, compared to their prokaryote and eukaryote hosts, we can posit that contrarily of what suggested before the environment direct impact viruses assemblage composition instead of acting indirectly by governing their host diversity. But, the increase in enriched mesopelagic OTUs abundance also for viruses-host (prokaryotes and eukaryotes) in mesopelagic, specially in OMZ regions, do not discharge the virus-host indirect selection relationship. Also, we can suggest that the taxonomical coverage for viruses (Podoviridae and Mioviridae families and NCDLVs giruses) compared to the Prokaryote and Eukaryote full domain diversity, might had allowed us to better capture the impact of the environment on virus group.
 
-We were able to identify taxa that were enriched in OMZ ecoregions for all the assemblies (Fig \label{fig:tax_trees}). An interesting finding was that those signatures were obtained mainly at infra taxonomic level (OTUs). This fact is even more marked for the Eukaryote domain, we observed the same taxogroups, for instance Diplonemida, MALV….., enriched in both Oxic-mesopelagic and OMZ samples, however if we go further in the taxonomic branch we can clearly detect the differences, observing that different OTUs of the same taxogroup have preferences for each ecoregion (\textbf{Fig \label{fig:tax_trees}}). This reflects our ignorance about the biodiversity and functional plasticity inherent of species that shares higher taxonomic levels.
+\begin{suppfigure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{images/heatmap_Vir_Gir.pdf}
+    \caption{Virus / Girsues abundance heatmap}
+    \label{fig:tax_trees_sup}
+\end{suppfigure}
+
+
+
+We were able to identify taxa that were enriched in OMZ ecoregions for all the assemblies (Fig \label{fig:tax_trees}). An interesting finding was that those signatures were obtained mainly at infra taxonomic level (OTUs). This fact is even more marked for the Eukaryote domain, we observed the same taxogroups, for instance Diplonemida, MALV….., enriched in both Oxic-mesopelagic and OMZ samples, however if we go further in the taxonomic branch we can clearly detect the differences, observing that different OTUs of the same taxogroup have preferences for each ecoregion (\textbf{Fig \label{fig:tax_trees_sup}}). This reflects our ignorance about the biodiversity and functional plasticity inherent of species that shares higher taxonomic levels.
 
 \begin{figure}[ht]
     \centering
@@ -108,12 +118,12 @@ We were able to identify taxa that were enriched in OMZ ecoregions for all the a
     \label{fig:tax_trees}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{suppfigure}[ht]
     \centering
-    \includegraphics[scale=0.8,angle=90,origin=c]{images/hmap_general_pub.pdf}
+    \includegraphics[scale=0.8,angle=90,origin=c]{images/Trees_OTU_sup.pdf}
     \caption{Taxonomy Trees}
-    \label{fig:tax_trees}
-\end{figure}
+    \label{fig:tax_trees_sup}
+\end{suppfigure}
 
 Another step to better understand the dynamic of mesopelagic communities goes towards the ecological relationships among species that thrive this layer. Co-occurrence networks indicates how the environment may force the community composition, but can also give us glimpses of ecological interactions among organisms. We derived a network of x nodes and y edges, that presents associations between OTUs. We run a module detection algorithm and we found three statistically significant modules that were composed by OTUs mainly enriched in mesopelagic samples (OMZ-modules 4 and 17 and oxic-mesopelagic module 1 \textbf{Figure 3a-c}).
 
